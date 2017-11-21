@@ -5,29 +5,34 @@ import org.eclipse.e4.ui.workbench.lifecycle.PostContextCreate;
 import org.eclipse.e4.ui.workbench.lifecycle.PreSave;
 import org.eclipse.e4.ui.workbench.lifecycle.ProcessAdditions;
 import org.eclipse.e4.ui.workbench.lifecycle.ProcessRemovals;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * This is a stub implementation containing e4 LifeCycle annotated methods.<br />
  * There is a corresponding entry in <em>plugin.xml</em> (under the
- * <em>org.eclipse.core.runtime.products' extension point</em>) that references
- * this class.
+ * <em>org.eclipse.core.runtime.products' extension point</em>) that references this class.
  **/
 @SuppressWarnings("restriction")
 public class E4LifeCycle {
 
-	@PostContextCreate
-	void postContextCreate(IEclipseContext workbenchContext) {
-	}
+  /** The usual Logger. */
+  private static final Logger LOGGER = LoggerFactory.getLogger(E4LifeCycle.class);
 
-	@PreSave
-	void preSave(IEclipseContext workbenchContext) {
-	}
 
-	@ProcessAdditions
-	void processAdditions(IEclipseContext workbenchContext) {
-	}
+  @PostContextCreate
+  void postContextCreate(IEclipseContext workbenchContext) {
+    LOGGER.debug("Post Context Create Method called...");
 
-	@ProcessRemovals
-	void processRemovals(IEclipseContext workbenchContext) {
-	}
+    LOGGER.debug("Post Context Create Method left...");
+  }
+
+  @PreSave
+  void preSave(IEclipseContext workbenchContext) {}
+
+  @ProcessAdditions
+  void processAdditions(IEclipseContext workbenchContext) {}
+
+  @ProcessRemovals
+  void processRemovals(IEclipseContext workbenchContext) {}
 }

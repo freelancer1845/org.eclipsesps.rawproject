@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="spsmodel" nsURI="http://org.eclispesps/spsmodel" nsPrefix="spsmodel">
+  <eClassifiers xsi:type="ecore:EClass" name="IIOField" abstract="true" interface="true">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="General IOField. This IO Field only supports getting its Value and its Id which should be an identfier to cleary state whate the field is."/>
+    </eAnnotations>
+    <eTypeParameters name="T"/>
+    <eOperations name="getId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The Identification of the IO Field. Should cleary state the intendet use of the field."/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Returns the current Value of the field (This is a stored value and may not reflect the true value in the machine)."/>
+      </eAnnotations>
+      <eGenericType eTypeParameter="#//IIOField/T"/>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="WriteableIOField" abstract="true" interface="true">
+    <eTypeParameters name="T"/>
+    <eOperations name="writeValue">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Writes the value to this IOField. This only triggers the machine interface to write the value and may not result in the actual writing.&#xD;&#xA;The method is asnyc. &#xD;&#xA;See {@linkplain writeValueSync()} for a synchronous writing"/>
+      </eAnnotations>
+      <eParameters name="value">
+        <eGenericType eTypeParameter="#//WriteableIOField/T"/>
+      </eParameters>
+    </eOperations>
+    <eOperations name="writeValueSync">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Write the value sync and blocks until the value is writen."/>
+      </eAnnotations>
+      <eParameters name="value">
+        <eGenericType eTypeParameter="#//WriteableIOField/T"/>
+      </eParameters>
+    </eOperations>
+    <eGenericSuperTypes eClassifier="#//IIOField">
+      <eTypeArguments eTypeParameter="#//WriteableIOField/T"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractIOField" abstract="true">
+    <eTypeParameters name="T"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value">
+      <eGenericType eTypeParameter="#//AbstractIOField/T"/>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="#//IIOField">
+      <eTypeArguments eTypeParameter="#//AbstractIOField/T"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractWriteableIOField" abstract="true">
+    <eTypeParameters name="T"/>
+    <eGenericSuperTypes eClassifier="#//AbstractIOField">
+      <eTypeArguments eTypeParameter="#//AbstractWriteableIOField/T"/>
+    </eGenericSuperTypes>
+    <eGenericSuperTypes eClassifier="#//WriteableIOField">
+      <eTypeArguments eTypeParameter="#//AbstractWriteableIOField/T"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AnalogInput">
+    <eGenericSuperTypes eClassifier="#//AbstractIOField">
+      <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DigitalInput">
+    <eGenericSuperTypes eClassifier="#//AbstractIOField">
+      <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AnalogOutput">
+    <eGenericSuperTypes eClassifier="#//AbstractWriteableIOField">
+      <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DigitalOutput">
+    <eGenericSuperTypes eClassifier="#//AbstractWriteableIOField">
+      <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+</ecore:EPackage>

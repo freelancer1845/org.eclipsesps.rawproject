@@ -14,5 +14,6 @@
 
 	<modules>
 		<module>org.eclipsesps.rcp.feature</module>
+		<module>org.eclipsesps.sps.feature</module>
 	</modules>
 </project>
