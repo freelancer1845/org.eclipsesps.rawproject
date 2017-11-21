@@ -2,7 +2,7 @@ package org.eclipsesps.spsconnector.api;
 
 import java.util.Map;
 
-public interface SpsConnector<T> {
+public interface SpsConnector {
 
 
   public void connect(Map<String, Object> parameters) throws SpsConnectorException;

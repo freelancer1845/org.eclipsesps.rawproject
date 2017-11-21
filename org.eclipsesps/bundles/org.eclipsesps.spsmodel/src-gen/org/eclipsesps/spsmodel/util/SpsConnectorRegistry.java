@@ -8,7 +8,7 @@ import org.osgi.service.component.annotations.Reference;
 public class SpsConnectorRegistry {
 
   @Reference
-  private SpsConnector<?> spsConnector;
+  private SpsConnector spsConnector;
 
   private static SpsConnectorRegistry instance = null;
 
@@ -20,7 +20,7 @@ public class SpsConnectorRegistry {
     return instance;
   }
 
-  public SpsConnector<?> getSpsConnector() {
+  public SpsConnector getSpsConnector() {
     if (spsConnector == null) {
       throw new IllegalStateException("Model could not find SpsConnector...");
     }

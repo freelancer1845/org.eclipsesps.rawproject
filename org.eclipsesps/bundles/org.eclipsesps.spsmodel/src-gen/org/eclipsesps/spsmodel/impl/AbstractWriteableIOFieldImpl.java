@@ -10,6 +10,8 @@ import org.eclipsesps.spsmodel.AbstractWriteableIOField;
 import org.eclipsesps.spsmodel.SpsmodelPackage;
 import org.eclipsesps.spsmodel.WriteableIOField;
 import org.eclipsesps.spsmodel.util.SpsConnectorRegistry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * <!-- begin-user-doc --> An implementation of the model object '<em><b>Abstract Writeable IO
@@ -19,9 +21,17 @@ import org.eclipsesps.spsmodel.util.SpsConnectorRegistry;
  */
 public abstract class AbstractWriteableIOFieldImpl<T> extends AbstractIOFieldImpl<T>
     implements AbstractWriteableIOField<T> {
+
+  /**
+   * The usual Logger.
+   * 
+   * @generated NOT
+   */
+  private static final Logger LOGGER = LoggerFactory.getLogger(AbstractWriteableIOFieldImpl.class);
+
+
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   protected AbstractWriteableIOFieldImpl() {
@@ -30,7 +40,6 @@ public abstract class AbstractWriteableIOFieldImpl<T> extends AbstractIOFieldImp
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   @Override
@@ -62,7 +71,6 @@ public abstract class AbstractWriteableIOFieldImpl<T> extends AbstractIOFieldImp
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   @Override
@@ -83,7 +91,7 @@ public abstract class AbstractWriteableIOFieldImpl<T> extends AbstractIOFieldImp
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
-   * @generated
+   * @generated NOT
    */
   @Override
   public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
@@ -92,14 +100,14 @@ public abstract class AbstractWriteableIOFieldImpl<T> extends AbstractIOFieldImp
         try {
           writeValue((T) arguments.get(0));
         } catch (SpsConnectorException e) {
-          e.printStackTrace();
+          LOGGER.error("Failed to write value.", e);
         }
         return null;
       case SpsmodelPackage.ABSTRACT_WRITEABLE_IO_FIELD___WRITE_VALUE_SYNC__OBJECT:
         try {
           writeValueSync((T) arguments.get(0));
         } catch (SpsConnectorException e) {
-          e.printStackTrace();
+          LOGGER.error("Failed to write value.", e);
         }
         return null;
     }

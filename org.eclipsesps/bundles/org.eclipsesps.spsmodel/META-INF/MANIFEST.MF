@@ -14,4 +14,5 @@ Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.core.runtime
 Bundle-ActivationPolicy: lazy
 Service-Component: OSGI-INF/org.eclipsesps.spsmodel.util.SpsConnectorRegistry.xml
-Import-Package: org.eclipsesps.spsconnector.api
+Import-Package: org.eclipsesps.spsconnector.api,
+ org.slf4j;version="1.7.10"
