@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipsesps.rcp.feature_0.1.0.jar" id="org.eclipsesps.rcp.feature" version="0.1.0">
+      <category name="RCPContent"/>
+   </feature>
+   <category-def name="RCPContent" label="RCP Content"/>
+</site>

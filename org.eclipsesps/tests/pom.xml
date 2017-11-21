@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.eclipsesps</groupId>
+    <artifactId>org.eclipsesps.tests</artifactId>
+    <version>0.1.0</version>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>org.eclipsesps</groupId>
+        <artifactId>org.eclipsesps.root</artifactId>
+        <version>0.1.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <modules>
+    <module>org.eclipsesps.rcp.main.tests</module>
+    </modules>
+</project>

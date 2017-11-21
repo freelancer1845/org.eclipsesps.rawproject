@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.eclipsesps</groupId>
+	<artifactId>org.eclipsesps.releng</artifactId>
+	<version>0.1.0</version>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>org.eclipsesps</groupId>
+		<artifactId>org.eclipsesps.root</artifactId>
+		<version>0.1.0</version>
+	</parent>
+
+	<modules>
+		<module>org.eclipsesps.product</module>
+		<module>org.eclipsesps.update</module>
+		<module>org.eclipsesps.target</module>
+	</modules>
+</project>
