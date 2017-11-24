@@ -22,6 +22,7 @@ package org.eclipsesps.spsmodel;
 public interface AbstractIOField<T> extends IIOField<T> {
   /**
    * Returns the value of the '<em><b>Id</b></em>' attribute.
+   * The default value is <code>"default"</code>.
    * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Id</em>' attribute isn't clear,
@@ -31,7 +32,7 @@ public interface AbstractIOField<T> extends IIOField<T> {
    * @return the value of the '<em>Id</em>' attribute.
    * @see #setId(String)
    * @see org.eclipsesps.spsmodel.SpsmodelPackage#getAbstractIOField_Id()
-   * @model id="true"
+   * @model default="default" id="true"
    * @generated
    */
   String getId();

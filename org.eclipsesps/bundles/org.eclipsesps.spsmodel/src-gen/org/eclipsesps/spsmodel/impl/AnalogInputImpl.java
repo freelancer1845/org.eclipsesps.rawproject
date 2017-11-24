@@ -12,14 +12,15 @@ import org.eclipsesps.spsmodel.SpsmodelPackage;
  *
  * @generated
  */
-public class AnalogInputImpl extends AbstractIOFieldImpl<Double> implements AnalogInput {
+public class AnalogInputImpl extends AbstractIOFieldImpl<Integer> implements AnalogInput {
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
-   * @generated
+   * @generated NOT
    */
   protected AnalogInputImpl() {
     super();
+    this.value = 0;
   }
 
   /**
@@ -32,9 +33,6 @@ public class AnalogInputImpl extends AbstractIOFieldImpl<Double> implements Anal
     return SpsmodelPackage.Literals.ANALOG_INPUT;
   }
 
-  @Override
-  public void setValue(Double newValue) {
-    throw new UnsupportedOperationException("Setting the value is not allowed... user writeValue");
-  }
+
 
 } // AnalogInputImpl

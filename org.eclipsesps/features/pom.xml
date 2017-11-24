@@ -15,5 +15,7 @@
 	<modules>
 		<module>org.eclipsesps.rcp.feature</module>
 		<module>org.eclipsesps.sps.feature</module>
+		<module>org.eclipsesps.ui.feature</module>
+		<module>org.eclipsesps.sps.modbus.feature</module>
 	</modules>
 </project>

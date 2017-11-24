@@ -17,10 +17,11 @@ public class DigitalOutputImpl extends AbstractWriteableIOFieldImpl<Boolean>
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
-   * @generated
+   * @generated NOT
    */
   protected DigitalOutputImpl() {
     super();
+    this.value = false;
   }
 
   /**
@@ -31,11 +32,6 @@ public class DigitalOutputImpl extends AbstractWriteableIOFieldImpl<Boolean>
   @Override
   protected EClass eStaticClass() {
     return SpsmodelPackage.Literals.DIGITAL_OUTPUT;
-  }
-
-  @Override
-  public void setValue(Boolean newValue) {
-    throw new UnsupportedOperationException("Setting the value is not allowed... user writeValue");
   }
 
 

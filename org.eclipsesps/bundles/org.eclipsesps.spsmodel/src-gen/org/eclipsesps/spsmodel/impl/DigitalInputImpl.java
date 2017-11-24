@@ -16,10 +16,11 @@ public class DigitalInputImpl extends AbstractIOFieldImpl<Boolean> implements Di
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
-   * @generated
+   * @generated NOT
    */
   protected DigitalInputImpl() {
     super();
+    this.value = false;
   }
 
   /**
@@ -30,11 +31,6 @@ public class DigitalInputImpl extends AbstractIOFieldImpl<Boolean> implements Di
   @Override
   protected EClass eStaticClass() {
     return SpsmodelPackage.Literals.DIGITAL_INPUT;
-  }
-
-  @Override
-  public void setValue(Boolean newValue) {
-    throw new UnsupportedOperationException("Setting the value is not allowed... user writeValue");
   }
 
 } // DigitalInputImpl

@@ -23,10 +23,10 @@ public class IOFieldTest {
   public void testWriting() throws SpsConnectorException {
     AnalogOutput output = factory.createAnalogOutput();
     output.setId("testId");
-    output.writeValue(0.1);
+    output.writeValue(1);
     assertTrue("AbstractWritableIOField field did not transmit write to sps connector.",
-        (Double) registry.getSpsConnector().readIO(output.getId()) == 0.1);
-    assertTrue("SpsConnector did not change the field of the output...", output.getValue() == 0.1);
+        (Double) registry.getSpsConnector().readIO(output.getId()) == 1);
+    assertTrue("SpsConnector did not change the field of the output...", output.getValue() == 1);
   }
 
 

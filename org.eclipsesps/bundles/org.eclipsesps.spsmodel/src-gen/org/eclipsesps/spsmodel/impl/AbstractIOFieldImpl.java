@@ -17,8 +17,8 @@ import org.eclipsesps.spsmodel.util.OSGIRegistryAccess;
  * The following features are implemented:
  * </p>
  * <ul>
- * <li>{@link org.eclipsesps.spsmodel.impl.AbstractIOFieldImpl#getId <em>Id</em>}</li>
- * <li>{@link org.eclipsesps.spsmodel.impl.AbstractIOFieldImpl#getValue <em>Value</em>}</li>
+ *   <li>{@link org.eclipsesps.spsmodel.impl.AbstractIOFieldImpl#getId <em>Id</em>}</li>
+ *   <li>{@link org.eclipsesps.spsmodel.impl.AbstractIOFieldImpl#getValue <em>Value</em>}</li>
  * </ul>
  *
  * @generated
@@ -26,19 +26,19 @@ import org.eclipsesps.spsmodel.util.OSGIRegistryAccess;
 public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Container
     implements AbstractIOField<T> {
   /**
-   * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!-- begin-user-doc --> <!--
+   * The default value of the '{@link #getId() <em>Id</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
    * @see #getId()
    * @generated
    * @ordered
    */
-  protected static final String ID_EDEFAULT = null;
+  protected static final String ID_EDEFAULT = "default";
 
   /**
-   * The cached value of the '{@link #getId() <em>Id</em>}' attribute. <!-- begin-user-doc --> <!--
+   * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
+   * <!-- begin-user-doc --> <!--
    * end-user-doc -->
-   * 
    * @see #getId()
    * @generated
    * @ordered
@@ -46,9 +46,9 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
   protected String id = ID_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getValue() <em>Value</em>}' attribute. <!-- begin-user-doc -->
+   * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
+   * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * 
    * @see #getValue()
    * @generated
    * @ordered
@@ -58,7 +58,7 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
-   * @generated
+   * @generated NOT
    */
   protected AbstractIOFieldImpl() {
     super();
@@ -67,7 +67,6 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   @Override
@@ -77,7 +76,6 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   public String getId() {
@@ -87,7 +85,7 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
-   * @generated
+   * @generated NOT
    */
   public void setId(String newId) {
     String oldId = id;
@@ -100,7 +98,6 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   public T getValue() {
@@ -109,7 +106,6 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   public void setValue(T newValue) {
@@ -122,7 +118,6 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   @Override
@@ -138,7 +133,6 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   @SuppressWarnings("unchecked")
@@ -157,7 +151,6 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   @Override
@@ -175,7 +168,6 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   @Override
@@ -191,7 +183,6 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
 
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * 
    * @generated
    */
   @Override

@@ -9,8 +9,8 @@ package org.eclipsesps.spsmodel;
  *
  *
  * @see org.eclipsesps.spsmodel.SpsmodelPackage#getAnalogOutput()
- * @model superTypes="org.eclipsesps.spsmodel.AbstractWriteableIOField&lt;org.eclipse.emf.ecore.EDoubleObject&gt;"
+ * @model superTypes="org.eclipsesps.spsmodel.AbstractWriteableIOField&lt;org.eclipse.emf.ecore.EIntegerObject&gt;"
  * @generated
  */
-public interface AnalogOutput extends AbstractWriteableIOField<Double> {
+public interface AnalogOutput extends AbstractWriteableIOField<Integer> {
 } // AnalogOutput

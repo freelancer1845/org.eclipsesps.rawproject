@@ -9,8 +9,8 @@ package org.eclipsesps.spsmodel;
  *
  *
  * @see org.eclipsesps.spsmodel.SpsmodelPackage#getAnalogInput()
- * @model superTypes="org.eclipsesps.spsmodel.AbstractIOField&lt;org.eclipse.emf.ecore.EDoubleObject&gt;"
+ * @model superTypes="org.eclipsesps.spsmodel.AbstractIOField&lt;org.eclipse.emf.ecore.EIntegerObject&gt;"
  * @generated
  */
-public interface AnalogInput extends AbstractIOField<Double> {
+public interface AnalogInput extends AbstractIOField<Integer> {
 } // AnalogInput

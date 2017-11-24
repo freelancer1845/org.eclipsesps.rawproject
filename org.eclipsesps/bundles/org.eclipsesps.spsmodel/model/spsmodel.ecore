@@ -43,7 +43,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="AbstractIOField" abstract="true">
     <eTypeParameters name="T"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        iD="true"/>
+        defaultValueLiteral="default" iD="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value">
       <eGenericType eTypeParameter="#//AbstractIOField/T"/>
     </eStructuralFeatures>
@@ -62,7 +62,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AnalogInput">
     <eGenericSuperTypes eClassifier="#//AbstractIOField">
-      <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+      <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     </eGenericSuperTypes>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DigitalInput">
@@ -72,7 +72,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AnalogOutput">
     <eGenericSuperTypes eClassifier="#//AbstractWriteableIOField">
-      <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+      <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
     </eGenericSuperTypes>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DigitalOutput">

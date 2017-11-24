@@ -376,7 +376,7 @@ public class SpsmodelPackageImpl extends EPackageImpl implements SpsmodelPackage
     g1.getETypeArguments().add(g2);
     abstractWriteableIOFieldEClass.getEGenericSuperTypes().add(g1);
     g1 = createEGenericType(this.getAbstractIOField());
-    g2 = createEGenericType(ecorePackage.getEDoubleObject());
+    g2 = createEGenericType(ecorePackage.getEIntegerObject());
     g1.getETypeArguments().add(g2);
     analogInputEClass.getEGenericSuperTypes().add(g1);
     g1 = createEGenericType(this.getAbstractIOField());
@@ -384,7 +384,7 @@ public class SpsmodelPackageImpl extends EPackageImpl implements SpsmodelPackage
     g1.getETypeArguments().add(g2);
     digitalInputEClass.getEGenericSuperTypes().add(g1);
     g1 = createEGenericType(this.getAbstractWriteableIOField());
-    g2 = createEGenericType(ecorePackage.getEDoubleObject());
+    g2 = createEGenericType(ecorePackage.getEIntegerObject());
     g1.getETypeArguments().add(g2);
     analogOutputEClass.getEGenericSuperTypes().add(g1);
     g1 = createEGenericType(this.getAbstractWriteableIOField());
@@ -419,7 +419,7 @@ public class SpsmodelPackageImpl extends EPackageImpl implements SpsmodelPackage
 
     initEClass(abstractIOFieldEClass, AbstractIOField.class, "AbstractIOField", IS_ABSTRACT,
         !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getAbstractIOField_Id(), ecorePackage.getEString(), "id", null, 0, 1,
+    initEAttribute(getAbstractIOField_Id(), ecorePackage.getEString(), "id", "default", 0, 1,
         AbstractIOField.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID,
         IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     g1 = createEGenericType(abstractIOFieldEClass_T);

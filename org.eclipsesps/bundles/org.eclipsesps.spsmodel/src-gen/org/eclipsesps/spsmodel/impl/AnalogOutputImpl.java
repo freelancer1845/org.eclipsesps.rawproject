@@ -12,14 +12,16 @@ import org.eclipsesps.spsmodel.SpsmodelPackage;
  *
  * @generated
  */
-public class AnalogOutputImpl extends AbstractWriteableIOFieldImpl<Double> implements AnalogOutput {
+public class AnalogOutputImpl extends AbstractWriteableIOFieldImpl<Integer>
+    implements AnalogOutput {
   /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * 
-   * @generated
+   * @generated NOT
    */
   protected AnalogOutputImpl() {
     super();
+    this.value = 0;
   }
 
   /**
@@ -32,10 +34,6 @@ public class AnalogOutputImpl extends AbstractWriteableIOFieldImpl<Double> imple
     return SpsmodelPackage.Literals.ANALOG_OUTPUT;
   }
 
-  @Override
-  public void setValue(Double newValue) {
-    throw new UnsupportedOperationException("Setting the value is not allowed... user writeValue");
-  }
 
 
 } // AnalogOutputImpl
