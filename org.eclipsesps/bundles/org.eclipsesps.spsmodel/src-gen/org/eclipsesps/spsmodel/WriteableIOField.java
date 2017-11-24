@@ -2,8 +2,6 @@
  */
 package org.eclipsesps.spsmodel;
 
-import org.eclipsesps.spsconnector.api.SpsConnectorException;
-
 /**
  * <!-- begin-user-doc --> A representation of the model object '<em><b>Writeable IO
  * Field</b></em>'. <!-- end-user-doc -->

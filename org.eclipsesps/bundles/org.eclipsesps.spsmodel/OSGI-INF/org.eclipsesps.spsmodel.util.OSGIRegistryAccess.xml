@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" immediate="true" name="org.eclipsesps.spsmodel.util.OSGIRegistryAccess">
+   <reference cardinality="1..1" field="ioRegistry" interface="org.eclipsesps.spsmodel.IORegistryService" name="ioRegistry"/>
+   <reference cardinality="1..1" field="spsConnector" interface="org.eclipsesps.spsmodel.SpsConnector" name="spsConnector"/>
+   <implementation class="org.eclipsesps.spsmodel.util.OSGIRegistryAccess"/>
+</scr:component>

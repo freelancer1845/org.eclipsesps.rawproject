@@ -1,4 +1,4 @@
-package org.eclipsesps.spsconnector.api;
+package org.eclipsesps.spsmodel;
 
 public class SpsConnectorException extends Exception {
 

@@ -7,16 +7,15 @@ import org.eclipsesps.spsmodel.DigitalInput;
 import org.eclipsesps.spsmodel.SpsmodelPackage;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Digital Input</b></em>'.
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Digital Input</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
 public class DigitalInputImpl extends AbstractIOFieldImpl<Boolean> implements DigitalInput {
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   protected DigitalInputImpl() {
@@ -24,8 +23,8 @@ public class DigitalInputImpl extends AbstractIOFieldImpl<Boolean> implements Di
   }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   @Override
@@ -33,15 +32,9 @@ public class DigitalInputImpl extends AbstractIOFieldImpl<Boolean> implements Di
     return SpsmodelPackage.Literals.DIGITAL_INPUT;
   }
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * This is specialized for the more specific type known in this context.
-   * @generated
-   */
   @Override
   public void setValue(Boolean newValue) {
-    super.setValue(newValue);
+    throw new UnsupportedOperationException("Setting the value is not allowed... user writeValue");
   }
 
-} //DigitalInputImpl
+} // DigitalInputImpl

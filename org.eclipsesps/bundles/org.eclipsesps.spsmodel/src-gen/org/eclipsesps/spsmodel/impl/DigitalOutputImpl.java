@@ -7,8 +7,7 @@ import org.eclipsesps.spsmodel.DigitalOutput;
 import org.eclipsesps.spsmodel.SpsmodelPackage;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Digital Output</b></em>'.
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Digital Output</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
@@ -16,8 +15,8 @@ import org.eclipsesps.spsmodel.SpsmodelPackage;
 public class DigitalOutputImpl extends AbstractWriteableIOFieldImpl<Boolean>
     implements DigitalOutput {
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   protected DigitalOutputImpl() {
@@ -25,8 +24,8 @@ public class DigitalOutputImpl extends AbstractWriteableIOFieldImpl<Boolean>
   }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   @Override
@@ -34,4 +33,11 @@ public class DigitalOutputImpl extends AbstractWriteableIOFieldImpl<Boolean>
     return SpsmodelPackage.Literals.DIGITAL_OUTPUT;
   }
 
-} //DigitalOutputImpl
+  @Override
+  public void setValue(Boolean newValue) {
+    throw new UnsupportedOperationException("Setting the value is not allowed... user writeValue");
+  }
+
+
+
+} // DigitalOutputImpl

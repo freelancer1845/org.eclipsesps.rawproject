@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" immediate="true" name="org.eclipsesps.spsmodel.util.SpsConnectorRegistry">
-   <reference cardinality="1..1" field="spsConnector" interface="org.eclipsesps.spsconnector.api.SpsConnector" name="spsConnector"/>
-   <implementation class="org.eclipsesps.spsmodel.util.SpsConnectorRegistry"/>
-</scr:component>

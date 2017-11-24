@@ -1,9 +1,8 @@
-package org.eclipsesps.spsconnector.api;
+package org.eclipsesps.spsmodel;
 
 import java.util.Map;
 
 public interface SpsConnector {
-
 
   public void connect(Map<String, Object> parameters) throws SpsConnectorException;
 
@@ -16,5 +15,7 @@ public interface SpsConnector {
   public void writeIO(String id, Object value) throws SpsConnectorException;
 
   public Object readIO(String id) throws SpsConnectorException;
+
+  public IORegistryService getIORegistryService();
 
 }

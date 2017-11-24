@@ -15,5 +15,6 @@
 
     <modules>
     <module>org.eclipsesps.rcp.main.tests</module>
+    <module>org.eclipsesps.spsmodel.tests</module>
     </modules>
 </project>
