@@ -8,17 +8,17 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipsesps.spsmodel.AbstractIOField;
 import org.eclipsesps.spsmodel.SpsmodelPackage;
+import org.eclipsesps.spsmodel.util.OSGIRegistryAccess;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Abstract IO Field</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Abstract IO
+ * Field</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.eclipsesps.spsmodel.impl.AbstractIOFieldImpl#getId <em>Id</em>}</li>
- *   <li>{@link org.eclipsesps.spsmodel.impl.AbstractIOFieldImpl#getValue <em>Value</em>}</li>
+ * <li>{@link org.eclipsesps.spsmodel.impl.AbstractIOFieldImpl#getId <em>Id</em>}</li>
+ * <li>{@link org.eclipsesps.spsmodel.impl.AbstractIOFieldImpl#getValue <em>Value</em>}</li>
  * </ul>
  *
  * @generated
@@ -26,9 +26,9 @@ import org.eclipsesps.spsmodel.SpsmodelPackage;
 public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Container
     implements AbstractIOField<T> {
   /**
-   * The default value of the '{@link #getId() <em>Id</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!-- begin-user-doc --> <!--
+   * end-user-doc -->
+   * 
    * @see #getId()
    * @generated
    * @ordered
@@ -36,9 +36,9 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
   protected static final String ID_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * The cached value of the '{@link #getId() <em>Id</em>}' attribute. <!-- begin-user-doc --> <!--
+   * end-user-doc -->
+   * 
    * @see #getId()
    * @generated
    * @ordered
@@ -46,9 +46,9 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
   protected String id = ID_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
-   * <!-- begin-user-doc -->
+   * The cached value of the '{@link #getValue() <em>Value</em>}' attribute. <!-- begin-user-doc -->
    * <!-- end-user-doc -->
+   * 
    * @see #getValue()
    * @generated
    * @ordered
@@ -56,17 +56,18 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
   protected T value;
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   protected AbstractIOFieldImpl() {
     super();
+    OSGIRegistryAccess.getInstance().getIORegistry().registerIOField(getId(), this);
   }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   @Override
@@ -75,8 +76,8 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
   }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public String getId() {
@@ -84,21 +85,22 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
   }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public void setId(String newId) {
     String oldId = id;
     id = newId;
+    OSGIRegistryAccess.getInstance().getIORegistry().changeIOFieldId(oldId, newId);
     if (eNotificationRequired())
       eNotify(new ENotificationImpl(this, Notification.SET, SpsmodelPackage.ABSTRACT_IO_FIELD__ID,
           oldId, id));
   }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public T getValue() {
@@ -106,8 +108,8 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
   }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   public void setValue(T newValue) {
@@ -119,8 +121,8 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
   }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   @Override
@@ -135,8 +137,8 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
   }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   @SuppressWarnings("unchecked")
@@ -154,8 +156,8 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
   }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   @Override
@@ -172,8 +174,8 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
   }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   @Override
@@ -188,8 +190,8 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
   }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   @Override
@@ -206,4 +208,4 @@ public abstract class AbstractIOFieldImpl<T> extends MinimalEObjectImpl.Containe
     return result.toString();
   }
 
-} //AbstractIOFieldImpl
+} // AbstractIOFieldImpl

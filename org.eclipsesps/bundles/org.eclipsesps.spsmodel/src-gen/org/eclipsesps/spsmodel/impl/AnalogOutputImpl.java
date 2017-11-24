@@ -7,16 +7,15 @@ import org.eclipsesps.spsmodel.AnalogOutput;
 import org.eclipsesps.spsmodel.SpsmodelPackage;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Analog Output</b></em>'.
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Analog Output</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
 public class AnalogOutputImpl extends AbstractWriteableIOFieldImpl<Double> implements AnalogOutput {
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   protected AnalogOutputImpl() {
@@ -24,8 +23,8 @@ public class AnalogOutputImpl extends AbstractWriteableIOFieldImpl<Double> imple
   }
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * 
    * @generated
    */
   @Override
@@ -33,4 +32,10 @@ public class AnalogOutputImpl extends AbstractWriteableIOFieldImpl<Double> imple
     return SpsmodelPackage.Literals.ANALOG_OUTPUT;
   }
 
-} //AnalogOutputImpl
+  @Override
+  public void setValue(Double newValue) {
+    throw new UnsupportedOperationException("Setting the value is not allowed... user writeValue");
+  }
+
+
+} // AnalogOutputImpl

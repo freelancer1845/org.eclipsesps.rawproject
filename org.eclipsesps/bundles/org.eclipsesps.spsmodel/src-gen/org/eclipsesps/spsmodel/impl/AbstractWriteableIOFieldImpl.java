@@ -5,11 +5,11 @@ package org.eclipsesps.spsmodel.impl;
 import java.lang.reflect.InvocationTargetException;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipsesps.spsconnector.api.SpsConnectorException;
 import org.eclipsesps.spsmodel.AbstractWriteableIOField;
+import org.eclipsesps.spsmodel.SpsConnectorException;
 import org.eclipsesps.spsmodel.SpsmodelPackage;
 import org.eclipsesps.spsmodel.WriteableIOField;
-import org.eclipsesps.spsmodel.util.SpsConnectorRegistry;
+import org.eclipsesps.spsmodel.util.OSGIRegistryAccess;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -55,7 +55,7 @@ public abstract class AbstractWriteableIOFieldImpl<T> extends AbstractIOFieldImp
    * @generated NOT
    */
   public void writeValue(T value) throws SpsConnectorException {
-    SpsConnectorRegistry.getInstance().getSpsConnector().queueIOWrite(getId(), value);
+    OSGIRegistryAccess.getInstance().getSpsConnector().queueIOWrite(getId(), value);
   }
 
   /**
@@ -66,7 +66,7 @@ public abstract class AbstractWriteableIOFieldImpl<T> extends AbstractIOFieldImp
    * @generated NOT
    */
   public void writeValueSync(T value) throws SpsConnectorException {
-    SpsConnectorRegistry.getInstance().getSpsConnector().writeIO(getId(), value);
+    OSGIRegistryAccess.getInstance().getSpsConnector().writeIO(getId(), value);
   }
 
   /**
