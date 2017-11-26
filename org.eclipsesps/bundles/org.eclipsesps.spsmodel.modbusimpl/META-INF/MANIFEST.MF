@@ -8,6 +8,7 @@ Bundle-ClassPath: lib/EasyModbusJava.jar,
  .
 Import-Package: org.eclipsesps.spsmodel,
  org.eclipsesps.spsmodel.impl,
+ org.osgi.service.component.annotations;version="1.3.0",
  org.slf4j;version="1.7.10"
 Bundle-ActivationPolicy: lazy
 Service-Component: OSGI-INF/org.eclipsesps.spsmodel.modbusimpl.SpsConnectorImpl.xml

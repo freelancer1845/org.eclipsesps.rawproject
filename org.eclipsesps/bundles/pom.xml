@@ -16,8 +16,9 @@
 		<module>org.eclipsesps.rcp.main</module>
 		<module>org.eclipsesps.spsmodel</module>
 		<module>org.eclipsesps.spsmodel.edit</module>
-		<module>org.eclipsesps.spsconnector.api</module>
 		<module>org.eclipsesps.logging</module>
 		<module>org.eclipsesps.util</module>
+		<module>org.eclipsesps.spsmodel.modbusimpl</module>
+		<module>org.eclipsesps.ui</module>
 	</modules>
 </project>
