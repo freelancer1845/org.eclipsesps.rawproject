@@ -12,7 +12,7 @@ import org.eclipsesps.spsmodel.AnalogOutput;
 import org.eclipsesps.spsmodel.SpsConnector;
 import org.eclipsesps.spsmodel.SpsConnectorException;
 import org.eclipsesps.spsmodel.SpsmodelFactory;
-import org.eclipsesps.ui.labels.AnalogEditField;
+import org.eclipsesps.ui.edit.AnalogEditField;
 
 public class DebugPart {
 

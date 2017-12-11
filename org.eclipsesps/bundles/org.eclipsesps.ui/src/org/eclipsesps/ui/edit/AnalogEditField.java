@@ -1,4 +1,4 @@
-package org.eclipsesps.ui.labels;
+package org.eclipsesps.ui.edit;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.util.EContentAdapter;

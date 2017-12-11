@@ -7,13 +7,13 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Label;
 import org.eclipsesps.spsmodel.SpsmodelPackage;
 
-public class EContentAdapterImpl extends EContentAdapter {
+public class LabelBindingEContentAdapterImpl extends EContentAdapter {
 
   private final Function<Object, Boolean> validator;
 
   private final Label label;
 
-  public EContentAdapterImpl(Label label, Function<Object, Boolean> validator) {
+  public LabelBindingEContentAdapterImpl(Label label, Function<Object, Boolean> validator) {
     this.label = label;
     this.validator = validator;
   }
