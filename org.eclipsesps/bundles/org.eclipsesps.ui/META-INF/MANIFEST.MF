@@ -15,4 +15,5 @@ Import-Package: org.eclipse.emf.common.notify,
  org.eclipse.jface.window,
  org.eclipsesps.spsmodel,
  org.slf4j;version="1.7.10"
-Export-Package: org.eclipsesps.ui.labels
+Export-Package: org.eclipsesps.ui.edit,
+ org.eclipsesps.ui.labels
